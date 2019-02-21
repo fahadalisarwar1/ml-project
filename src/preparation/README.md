@@ -1,1 +1,1 @@
-Placholder for describing the flow of data preparation
+Placeholder for describing the flow of data preparation
