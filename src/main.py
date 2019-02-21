@@ -1,14 +1,22 @@
-import numpy as np
-import sys
-import file2 as f
-import myfile as mf
-import preparation.pre as p
-print(sys.path)
+########################################################################################################################
 
-sys.path.append('G:/projects/ml-project/src')
-np.arange(4)
+'''
+VERSION: 1.1.1
+AUTHOR: Fahad Ali SARWAR
+Email: fahadalisarwar@gmail.com
 
-print(mf.num1, f.num2, p.n)
+'''
+########################################################################################################################
+# imports
+from preparation.load_mach_data import *
+from preparation.load_sensor_data import *
+
+
+# The first step would be loading data
+
+
+
+
 
 
 
