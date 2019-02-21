@@ -104,11 +104,6 @@
               <item name="test-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="test-application" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="test-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test-application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -174,16 +169,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550738815401</updated>
-      <workItem from="1550738816797" duration="2365000" />
+      <workItem from="1550738816797" duration="2421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2365000" />
+    <option name="totallyTimeSpent" value="2421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12313433" />
