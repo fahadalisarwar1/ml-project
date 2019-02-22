@@ -1,7 +1,13 @@
 # Data
 
 This section provides information about the data. 
-## Getting Started
+## Data Sources
+The data for the labs comes from 4 different sources which are:
+
+- Real-time telemetry data collected from machines,
+- Error messages,
+- Failure history and,
+- Machine information such as type and age.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
