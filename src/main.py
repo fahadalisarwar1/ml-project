@@ -16,7 +16,7 @@ from preparation.load_error_data import *
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-
+import plots.plot_mach_features as pm
 
 # The first step would be loading data
 
@@ -24,11 +24,7 @@ import seaborn as sns
 
 # Plot of machine types and their ages
 # There are two categorical features in the data set of machine [Age of machine and Machine type]
+pm.plot_mach_features(data_mach, plt)
 
-categorical_features = ["model", "age"]
-fig, ax = plt.subplots(1, len(categorical_features))
-for i, categorical_feature in enumerate(data_mach[categorical_features]):
-    data_mach[categorical_feature].value_counts().plot("bar", ax=ax[i]).set_title(categorical_feature)
-fig.show()
 
 
