@@ -9,92 +9,25 @@ The data for the labs comes from 4 different sources which are:
 - Failure history and,
 - Machine information such as type and age.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Telemetry Data
+The first data source is the telemetry time-series data which consists of voltage, rotation, pressure and vibration measurements collected from 100 machines in real time averaged over every hour collected during the year 2015.
 
-What things you need to install the software and how to install them
+Total Number of telemetry records: 876100
 
-```
-Give examples
-```
+### Error Data
+The second major data source is the error logs. These are non-breaking errors thrown while the machine is still operational and do not constitute as failures. The error date and times are rounded to the closest hour since the telemetry data is collected at an hourly rate.
+Total Number of error records: 3919 
+Error types: 5
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
+### Machines Data
+This data set includes some information about the machines which are model type and age which is years in service.
 
-Say what the step will be
+Total number of machines: 100
 
-```
-Give the example
-```
+### Failures Data
+These are the records of machine failures. Each record has a date and time and machine ID.
 
-And repeat
+Total number of failures: 719
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-Data Sources
-The data for the labs comes from 4 different sources which are:
-
-real-time telemetry data collected from machines,
-error messages,
-failure history and,
-machine information such as type and age.
