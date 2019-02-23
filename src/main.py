@@ -17,6 +17,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import plots.plot_mach_features as pm
+import tensorflow as tf
+
 
 # The first step would be loading data
 
