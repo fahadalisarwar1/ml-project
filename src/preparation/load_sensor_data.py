@@ -2,7 +2,7 @@ import pandas as pd
 
 print("*******************************loading data from Files*******************************")
 
-data_sens = pd.read_csv('G:/projects/ml-project/data/raw/telemetry.csv')
+data_sens = pd.read_csv('/home/fahad/project/ml-project/data/raw/telemetry.csv')
 sens_date = data_sens.iloc[:, 0].values
 sens_id = data_sens.iloc[:, 1].values
 sens_volt = data_sens.iloc[:, 2].values
