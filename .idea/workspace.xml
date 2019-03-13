@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34081476-c317-41bf-bea4-b25fa248ee82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/preparation/configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test-application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test-application.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/errors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw/errors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/failures.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw/failures.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/machines.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw/machines.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/machines1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/raw/telemetry.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw/telemetry.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preparation/load_error_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preparation/load_mach_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preparation/load_mach_fail.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +23,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/test_application$test_file.coverage" NAME="test file Coverage Results" MODIFIED="1550739814937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/ml_project$Nosetests_in_test_file_py.coverage" NAME="Nosetests in test_file.py Coverage Results" MODIFIED="1550742994849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ml_project$pre.coverage" NAME="pre Coverage Results" MODIFIED="1550745713030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/preparation" />
-    <SUITE FILE_PATH="coverage/ml_project$test_file.coverage" NAME="test file Coverage Results" MODIFIED="1550742982516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ml_project$testing123.coverage" NAME="testing123 Coverage Results" MODIFIED="1550743054632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ml_project$myfile.coverage" NAME="myfile Coverage Results" MODIFIED="1550744416546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ml_project$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1550743329208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/ml_project$main.coverage" NAME="main Coverage Results" MODIFIED="1550901456358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ml_project$test_file.coverage" NAME="test file Coverage Results" MODIFIED="1550742982516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ml_project$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1550743329208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ml_project$myfile.coverage" NAME="myfile Coverage Results" MODIFIED="1550744416546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ml_project$pre.coverage" NAME="pre Coverage Results" MODIFIED="1550745713030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/preparation" />
+    <SUITE FILE_PATH="coverage/ml_project$testing123.coverage" NAME="testing123 Coverage Results" MODIFIED="1550743054632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/test_application$test_file.coverage" NAME="test file Coverage Results" MODIFIED="1550739814937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -27,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="42">
+              <first_editor relative-caret-position="64">
                 <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
               </first_editor>
               <second_editor />
@@ -37,39 +48,47 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#335#375#0" expanded="true" />
-              </folding>
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="263">
+                <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+                <folding>
+                  <element signature="e#335#377#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor relative-caret-position="-224" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/preparation/configuration.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="128">
+                <caret line="4" selection-start-line="4" selection-end-line="4" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots/plot_mach_features.py">
-          <provider selected="true" editor-type-id="text-editor">
+          <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <caret column="41" selection-start-column="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/preparation/load_mach_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/preparation/load_sensor_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -104,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/preparation/load_error_data.py" />
         <option value="$PROJECT_DIR$/src/preparation/load_mach_fail.py" />
         <option value="$PROJECT_DIR$/plots/plot_mach_features.py" />
+        <option value="$PROJECT_DIR$/src/preparation/configuration.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
@@ -129,6 +149,17 @@
             <path>
               <item name="ml-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ml-project" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ml-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ml-project" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="raw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ml-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ml-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -145,7 +176,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/demo-feature-tools" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -341,6 +372,8 @@
       <workItem from="1550903365076" duration="143000" />
       <workItem from="1550905767134" duration="106000" />
       <workItem from="1550919402106" duration="400000" />
+      <workItem from="1551697653883" duration="835000" />
+      <workItem from="1551699152650" duration="1753000" />
     </task>
     <task id="LOCAL-00001" summary="1.1.2">
       <created>1550756074587</created>
@@ -365,13 +398,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28830000" />
+    <option name="totallyTimeSpent" value="31418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14026846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1398079" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -386,13 +418,14 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.45469084" side_tool="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946696" weight="0.3282123" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946696" visible="true" weight="0.3273305" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49688148" weight="0.034228187" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49448818" weight="0.43116328" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" order="5" sideWeight="0.5031185" side_tool="true" weight="0.67315435" />
+      <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" order="5" sideWeight="0.5007874" side_tool="true" visible="true" weight="0.32977587" />
+      <window_info anchor="right" id="SvgViewer" order="6" sideWeight="0.4992126" visible="true" weight="0.32977587" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13825503" />
@@ -436,21 +469,9 @@
     <entry file="file://$PROJECT_DIR$/src/file2.py" />
     <entry file="file://$PROJECT_DIR$/src/preparation/pre.py" />
     <entry file="file://$PROJECT_DIR$/src/preparation/prep.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pip/_vendor/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pip/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pip/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pip/_vendor/__init__.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pip/__init__.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pip/__main__.py" />
     <entry file="file://$PROJECT_DIR$/LICENCE.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -475,57 +496,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/preparation/load_mach_fail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/preparation/load_error_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/preparation/load_mach_fail.py" />
+    <entry file="file://$PROJECT_DIR$/src/preparation/load_mach_data.py" />
+    <entry file="file://$PROJECT_DIR$/src/preparation/load_error_data.py" />
     <entry file="file://$PROJECT_DIR$/src/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="42">
+          <first_editor relative-caret-position="64">
             <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/preparation/configuration.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="128">
+            <caret line="4" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plots/plot_mach_features.py">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
         <state>
           <caret column="41" selection-start-column="41" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/preparation/load_sensor_data.py">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/preparation/load_mach_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="263">
+            <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <folding>
+              <element signature="e#335#377#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-224" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
-            <element signature="e#335#375#0" expanded="true" />
+            <element signature="e#335#377#0" expanded="true" />
           </folding>
         </state>
       </provider>
