@@ -1,7 +1,9 @@
-
-
+import slice_file as sf
+import numpy as np
 import matplotlib.pyplot as plt
 import load_file as lf
+import pandas as pd
+
 
 DE_norm_df = lf.load_file_data('X097_DE_time', ['vib'])
 DE_norm_df = lf.add_time_stamp(DE_norm_df, 12000)
@@ -42,3 +44,16 @@ ax1.set_xlabel('Time (t)')
 ax1.set_ylabel('vibration ')
 plt.legend()
 plt.show()
+
+
+df_BA = pd.read_csv('X118_BA_time.csv', names=['vib'])
+df_BA = lf.add_time_stamp(df_BA, 12000)
+
+
+Normal_0_path = '/home/fahad/DATA/DATA_CSV/12K Fault/B007_0/B007_0_slices_BA/'
+list_slices = sf.to_slices(df_BA, 20)
+
+
+for i in np.arange(0, len(list_slices)):
+    list_slices[i].to_csv(Normal_0_path+str(i)+"X118_BA.csv")
+

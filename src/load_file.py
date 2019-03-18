@@ -8,6 +8,7 @@ def load_file_data(filename, col_names):
     import pandas as pd
     filepath = str(filename) + ".csv"
     df = pd.read_csv(filepath, names=col_names)
+
     return df
 
 
