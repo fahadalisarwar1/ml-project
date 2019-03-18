@@ -12,7 +12,7 @@ def cal_root_mean_sq(ser):
 
 def cal_mean(ser):
     len_of_series = ser.shape[0]
-    sum_series = sum(ser)
+    sum_series = ser.sum()
     mean = sum_series / len_of_series
     return mean
 
