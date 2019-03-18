@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import features_calculation as fc
 from pandas import Series
 
-path_files = '/home/fahad/DATA/WorkingData/B007_0/B007_0_slices_BA/'
-all_files = glob.glob(path_files+'*_BA.csv')
+path_files = '/home/fahad/DATA/ML-project/ml-project/data/WorkingData/Normal_0/FE_Normal_0_slices/'
+all_files = glob.glob(path_files+'*_FE.csv')
 list1 = []
 for filename in all_files:
     df = pd.read_csv(filename, index_col=None, header=0)
@@ -48,7 +48,9 @@ df2 = df1.T
 col_names = ['RMS', 'Mean', 'Var', 'Skew', 'Kurt', 'CrestFactor', 'ImpulseFactor', 'ShapeFactor', 'Median', 'Range']
 df2.columns = col_names
 
-df2['FaultType'] = 'B007'
+df2['FaultType'] = 'Normal'
 
-df2.to_csv('/home/fahad/DATA/WorkingData/B007_0/features_BA.csv')
+df2.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/Normal_0/features_FE.csv', index=None)
+
+
 
