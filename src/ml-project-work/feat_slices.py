@@ -4,7 +4,7 @@ import features_calculation as fc
 from pandas import Series
 
 path_files = '/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/IR028_0_slices_DE/'
-all_files = glob.glob(path_files+'*_DE_30.csv')
+all_files = glob.glob(path_files+'*_DE.csv')
 list1 = []
 for filename in all_files:
     df = pd.read_csv(filename, index_col=None, header=0)
