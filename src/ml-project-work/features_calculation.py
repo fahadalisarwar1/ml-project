@@ -116,5 +116,7 @@ def cal_range(ser):
     return ran
 
 
+def cal_spectral_flatness():
+    s = 1
 
 

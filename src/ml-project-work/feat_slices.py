@@ -1,11 +1,10 @@
 import pandas as pd
 import glob
-import matplotlib.pyplot as plt
 import features_calculation as fc
 from pandas import Series
 
 path_files = '/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/IR028_0_slices_DE/'
-all_files = glob.glob(path_files+'*_DE.csv')
+all_files = glob.glob(path_files+'*_DE_30.csv')
 list1 = []
 for filename in all_files:
     df = pd.read_csv(filename, index_col=None, header=0)
@@ -50,7 +49,7 @@ df2.columns = col_names
 
 df2['FaultType'] = 'IR028'
 
-df2.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/features_DE.csv', index=None)
+df2.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/features_DE_30.csv', index=None)
 
 
 
