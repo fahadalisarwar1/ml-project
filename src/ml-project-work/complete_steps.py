@@ -53,7 +53,7 @@ for folder_name in list_folder:
 
     # print(path_file)
     df = lf.load_file_data(path_file + DE_file_name, columns_read)
-    df = df = lf.add_time_stamp(df, 12000)
+    df = lf.add_time_stamp(df, 12000)
     list_full_df.append(df)
 ####################################################################
 
