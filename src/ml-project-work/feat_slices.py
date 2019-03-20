@@ -6,8 +6,8 @@ import features_calculation as fc
 from pandas import Series
 
 # load all the slices of the file available
-path_files = '/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/IR028_0_slices_DE/'
-all_files = glob.glob(path_files+'*_DE.csv')  # path to slices
+path_files = '/home/fahad/DATA/ML-project/ml-project/data/WorkingData/Normal_0/Normal_0_slices_DE/'
+all_files = glob.glob(path_files+'*_DE_20.csv')  # path to slices
 
 
 # Create a list of data frames of slices
@@ -16,7 +16,8 @@ for filename in all_files:
     df = pd.read_csv(filename, index_col=None, header=0)
     df = df.drop('Unnamed: 0', axis=1)
     list1.append(df)
-
+dataframe = list1[0]
+dataframe.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/Normal_0/loadedslice.csv', index=None)
 # plot of slices
 '''
 for i in range(1, 21):
@@ -59,7 +60,7 @@ df2.columns = col_names
 df2['FaultType'] = 'IR028'       # add label to the type of fault
 
 # store calculated features of the slices
-df2.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/features_DE_30.csv', index=None)
+df2.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/Normal_0/features_DE_new1.csv', index=None)
 
 
 
