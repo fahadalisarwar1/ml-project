@@ -1,16 +1,23 @@
+# file to determine features of the slices
+# import slices
 import pandas as pd
 import glob
 import features_calculation as fc
 from pandas import Series
 
+# load all the slices of the file available
 path_files = '/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/IR028_0_slices_DE/'
-all_files = glob.glob(path_files+'*_DE.csv')
+all_files = glob.glob(path_files+'*_DE.csv')  # path to slices
+
+
+# Create a list of data frames of slices
 list1 = []
 for filename in all_files:
     df = pd.read_csv(filename, index_col=None, header=0)
     df = df.drop('Unnamed: 0', axis=1)
     list1.append(df)
 
+# plot of slices
 '''
 for i in range(1, 21):
     plt.subplot(4, 5, i)
@@ -21,6 +28,8 @@ for i in range(1, 21):
     # plt.savefig('normal_0_plots.svg')
 '''
 
+# features calculation
+# there are 10 features that we calculate from this data
 feat_list_per_frame = []
 feat_list_total = []
 
@@ -42,13 +51,14 @@ for x in range(0, len(list1)):
 
 import pandas as pd
 
-df1 = pd.concat(feat_list_total, axis=1)
+df1 = pd.concat(feat_list_total, axis=1)  # make a single data frame of the features of all slices
 df2 = df1.T
 col_names = ['RMS', 'Mean', 'Var', 'Skew', 'Kurt', 'CrestFactor', 'ImpulseFactor', 'ShapeFactor', 'Median', 'Range']
 df2.columns = col_names
 
-df2['FaultType'] = 'IR028'
+df2['FaultType'] = 'IR028'       # add label to the type of fault
 
+# store calculated features of the slices
 df2.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/IR028_0/features_DE_30.csv', index=None)
 
 
