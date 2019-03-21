@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/features_DE_full.csv')
+df = pd.read_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/features_new.csv')
 
 # Separating inputs and outputs
 X = df.iloc[:, :-1].values

@@ -1,6 +1,5 @@
-import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn.metrics import confusion_matrix, precision_score
+from sklearn.metrics import precision_score
 from sklearn.model_selection import train_test_split
 from keras.layers import Dense, Dropout
 from keras.models import Sequential
