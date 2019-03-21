@@ -1,39 +1,59 @@
-# file to determine features of the slices
-# import slices
 import pandas as pd
-import glob
+import numpy as np
+import load_file as lf
+import slice_file as sf
+import os
 import features_calculation as fc
 from pandas import Series
+import glob
 import natsort
-# load all the slices of the file available
-path_files = '/home/fahad/DATA/ML-project/ml-project/data/WorkingData/Normal_0/Normal_0_slices_DE/'
-all_files = glob.glob(path_files+'DE_*.csv')  # path to slices
 
-all_files_sorted = natsort.natsorted(all_files, reverse=False)
-# Create a list of data frames of slices
+
+list_folder = ['Normal_0', 'B007_0', 'B014_0', 'B021_0', 'B028_0', 'IR007_0', 'IR014_0', 'IR021_0', 'IR028_0']
+list2 = []
+len_folders = len(list_folder)
+
+for folder_name in list_folder:
+    list2.append(folder_name + '/' + folder_name + '_slices_DE/')
+list_slice_folder_DE = list2
+
+DE_file_name = 'DE_time'
+
+columns_read = ['vib', 'Status', 'Type']  # values to be read from the columns
+
+
+slices_path = []
+for i in list_slice_folder_DE:
+    slices_path.append('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/'+i)
+
+list_paths_all = []
+for path in slices_path:
+    all_files = glob.glob(path+'DE_*.csv')
+    list_paths_all.append(all_files)
+
+# sorting the loading slices. For some reason the files are loaded randomly
+
+num_files = len(list_paths_all)
+num_slices = len(list_paths_all[0])
+
+all_files_sorted = []
+for x in range(0, num_files):
+    temp_list = list_paths_all[x]
+    temp_list = natsort.natsorted(temp_list, reverse=False)
+    all_files_sorted.append(temp_list)
+
+
 list1 = []
-for filename in all_files_sorted:
+for filename in all_files_sorted[0]:
     df = pd.read_csv(filename, index_col=None, header=0)
     df = df.drop('Unnamed: 0', axis=1)
     list1.append(df)
 
-# plot of slices
-'''
-for i in range(1, 21):
-    plt.subplot(4, 5, i)
-    plt.plot(list1[i-1]['time'], list1[i-1]['vib'])
-    plt.xlabel('time')
-    plt.ylabel('vibration')
-    plt.ylim(-0.5, 0.5)
-    # plt.savefig('normal_0_plots.svg')
-'''
-
-# features calculation
-# there are 10 features that we calculate from this data
 feat_list_per_frame = []
 feat_list_total = []
 
-for x in range(0, len(list1)):
+
+for x in range(0, num_slices):
     feat_list_per_frame = []
     feat_list_per_frame.append(fc.cal_root_mean_sq(list1[x]['vib']))
     feat_list_per_frame.append(fc.cal_mean(list1[x]['vib']))
@@ -60,6 +80,17 @@ df2['FaultType'] = 'Normal'       # add label to the type of fault
 
 # store calculated features of the slices
 df2.to_csv('/home/fahad/DATA/ML-project/ml-project/data/WorkingData/Normal_0/features_DE_new2.csv', index=None)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
