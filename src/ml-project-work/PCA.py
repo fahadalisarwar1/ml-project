@@ -28,12 +28,68 @@ dict_feat = {0: 'RMS', 1: 'Mean', 2: 'Var', 3: 'Skew', 4: 'Kurt',
              8: 'Median', 9: 'Range'}
 
 
-feat_df = pd.Series(dict_feat)
+feat_df1 = pd.Series(dict_feat)
 
 importance = clf.feature_importances_
 import_df = pd.Series(importance)
-df = pd.concat([feat_df, import_df], axis=1)
+df = pd.concat([feat_df1, import_df], axis=1)
 sort_df = df.sort_values(by=[1], ascending=False)
+RMS_Norm = feat_df[feat_df['FaultType'] == 'Normal_0']['RMS']
+Var_Norm = feat_df[feat_df['FaultType'] == 'Normal_0']['Var']
+RMS_B7 = feat_df[feat_df['FaultType'] == 'B007_0']['RMS']
+Var_B7 = feat_df[feat_df['FaultType'] == 'B007_0']['Var']
+RMS_B14 = feat_df[feat_df['FaultType'] == 'B014_0']['RMS']
+Var_B14 = feat_df[feat_df['FaultType'] == 'B014_0']['Var']
+RMS_B21 = feat_df[feat_df['FaultType'] == 'B021_0']['RMS']
+Var_B21 = feat_df[feat_df['FaultType'] == 'B021_0']['Var']
+RMS_B28 = feat_df[feat_df['FaultType'] == 'B028_0']['RMS']
+Var_B28 = feat_df[feat_df['FaultType'] == 'B028_0']['Var']
+RMS_IR7 = feat_df[feat_df['FaultType'] == 'IR007_0']['RMS']
+Var_IR7 = feat_df[feat_df['FaultType'] == 'IR007_0']['Var']
+RMS_IR14 = feat_df[feat_df['FaultType'] == 'IR014_0']['RMS']
+Var_IR14 = feat_df[feat_df['FaultType'] == 'IR014_0']['Var']
+RMS_IR21 = feat_df[feat_df['FaultType'] == 'IR021_0']['RMS']
+Var_IR21 = feat_df[feat_df['FaultType'] == 'IR021_0']['Var']
+RMS_IR28 = feat_df[feat_df['FaultType'] == 'IR028_0']['RMS']
+Var_IR28 = feat_df[feat_df['FaultType'] == 'IR028_0']['Var']
+
+data = ((RMS_Norm, Var_Norm), (RMS_B7, Var_B7), (RMS_B14, Var_B14), (RMS_B21, Var_B21), (RMS_B28, Var_B28),
+        (RMS_IR7, Var_IR7), (RMS_IR14, Var_IR14), (RMS_IR21, Var_IR21), (RMS_IR28, Var_IR28))
+colors = ("red", "green", "blue", "yellow", "orange", "black", "pink", "purple", "brown", "gray")
+groups = ("Normal", "B007", "B014", "B021", "B028", "IR007", "IR014", "IR021", "IR028")
+markers = ()
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+
+for data, color, group in zip(data, colors, groups):
+    x, y = data
+    ax.scatter(x, y, c=color, edgecolors='none', label=group)
+
+plt.title('Matplot scatter plot')
+plt.legend(loc=2)
+plt.show()
+
+
+plt.scatter(RMS_Norm, Var_Norm, 'ro',
+            RMS_B7, Var_B7, 'bs',
+            RMS_B14, Var_B14, 'go',
+            RMS_B21, Var_B21, 'r-',
+            RMS_B28, Var_B28, 'yo')
+
+plt.legend()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 plt.bar(sort_df[0], sort_df[1])
 plt.title("Feature Importance VS feature")
@@ -54,23 +110,6 @@ visualizer.fit(X_train, y_train)  # Fit the training data to the visualizer
 visualizer.score(X_test, y_test)  # Evaluate the model on the test data
 g = visualizer.poof('/home/fahad/DATA/ML-project/ml-project/Plots/DE_plots/ROC_with_NaiveBayes_Gaussian.png')             # Draw/show/poof the data
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-visualizer = ClassPredictionError(
-    clf, classes=classes
-)
 
 # clf.fit(X_train, y_train)
 # print(clf.feature_importances_)
