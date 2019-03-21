@@ -82,7 +82,6 @@ len_total_files = len(list_all_slices)
 len_slice_per_file = len(list_all_slices[0])
 
 
-
 feature_list_total = []
 for j in range(0, len_slice_per_file):
     feat_list_per_frame = []
